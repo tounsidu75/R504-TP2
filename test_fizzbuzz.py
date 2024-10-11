@@ -4,13 +4,11 @@ from fizzbuzz import affiche  # Assurez-vous que fizzbuzz est le bon nom de fich
 class TestFizzBuzz(unittest.TestCase):
 
     def test_affiche(self):
-        expected_output_15 = (
-            "1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz "
-            "11 Fizz 13 14 FrisBee"
-        )
-        result = affiche(100)  # Appel de la fonction
+        # Cas de test pour n = 15
+        expected_output_15 = "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee"
+        result = affiche(15)  # Appel de la fonction
         print(result)  # Afficher le résultat de la fonction
-        self.assertEqual(result, expected_output_15.strip())
+        self.assertEqual(result, expected_output_15)
 
 if __name__ == '__main__':
     unittest.main()

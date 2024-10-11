@@ -2,11 +2,11 @@ def affiche(n):
     result = ""
     for i in range(1, n + 1):
         if i % 15 == 0:
-            result += "FrisBee "
+            result += "FrisBee"
         elif i % 3 == 0:
-            result += "Fizz "
+            result += "Fizz"
         elif i % 5 == 0:
-            result += "Buzz "
+            result += "Buzz"
         else:
-            result += str(i) + " "
-    return result.strip()
+            result += str(i)
+    return result  # On retourne le résultat sans espace final
