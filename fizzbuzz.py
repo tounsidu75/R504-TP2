@@ -1,12 +1,12 @@
-def affiche():
-    output = []
-    for i in range(1, 101):
+def affiche(n):
+    result = ""
+    for i in range(1, n + 1):
         if i % 15 == 0:
-            output.append("FrisBee")
+            result += "FrisBee "
         elif i % 3 == 0:
-            output.append("Fizz")
+            result += "Fizz "
         elif i % 5 == 0:
-            output.append("Buzz")
+            result += "Buzz "
         else:
-            output.append(str(i))
-    print(''.join(output))
+            result += str(i) + " "
+    return result.strip()
